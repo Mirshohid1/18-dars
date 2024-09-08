@@ -50,5 +50,37 @@ This table stores information about users and includes the following columns:
 ## Example Queries
 
 1. Fetch all cities in `country1`:
-   ```sql
+   ```sqlite
    SELECT * FROM city WHERE country = 'country1';
+   ````
+2. Fetch all books by `author1`:
+   ```sqlite
+   SELECT * FROM book WHERE author = 'author1';
+   ```
+3. Fetch all users aged 25:
+   ```sqlite
+   SELECT * FROM user WHERE age = 25;
+   ```
+4. Fetch the first and last names of users aged 25:
+   ```sqlite
+   SELECT first_name, last_name FROM user WHERE age = 25;
+   ```
+5. Fetch the first and last name of the user with `id = 3`:
+   ```sqlite
+   SELECT first_name, last_name FROM user WHERE id = 3;
+   ```
+# How to run
+1. Clone the repository and navigate to the project directory:
+   ```bash
+   git clone https://github.com/your-username/repository-name.git
+   cd repository-name
+   ```
+2. Run the Python script:
+   ```bash
+   python your_script.py
+   ```
+This will create the database 18-dars.db, 
+insert data into the tables, and output the results of the queries.
+
+# License
+This project is open-source and free to use.
